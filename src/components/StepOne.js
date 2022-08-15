@@ -146,7 +146,7 @@ const StepOne = () => {
                   onChange={(e) => 
                     setUserData({ ...userData, phoneNumber: e.target.value })
                   }
-                  onClick={phoneCheck}
+                  // onClick={phoneCheck}
                 />
               </div>
               {expand === true ? (
