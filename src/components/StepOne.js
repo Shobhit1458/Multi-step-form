@@ -55,7 +55,7 @@ const StepOne = () => {
         .confirm(otp)
         .then((result) => {
           // User signed in successfully.
-          const user = result.user;
+          // const user = result.user;
           alert("Verified")
           setExpand(false)
         })
@@ -66,19 +66,19 @@ const StepOne = () => {
     }
   };
 
-  const phoneCheck = (e) => {
-    // setUserData({ ...userData, phoneNumber: e.target.value });
-    console.log("helkn")
-    return (
-      <button
-        type="button"
-        onClick={otpVerification}
-        className="w-full px-4 py-2 font-bold text-white bg-red-500 rounded-full hover:bg-red-700 focus:outline-none focus:shadow-outline"
-      >
-        Request OTP
-      </button>
-    );
-  };
+  // const phoneCheck = (e) => {
+  //   // setUserData({ ...userData, phoneNumber: e.target.value });
+  //   console.log("helkn")
+  //   return (
+  //     <button
+  //       type="button"
+  //       onClick={otpVerification}
+  //       className="w-full px-4 py-2 font-bold text-white bg-red-500 rounded-full hover:bg-red-700 focus:outline-none focus:shadow-outline"
+  //     >
+  //       Request OTP
+  //     </button>
+  //   );
+  // };
   return (
     <div class="container mx-auto">
       <div class="flex justify-center px-6 my-12">

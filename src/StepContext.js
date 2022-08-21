@@ -1,6 +1,5 @@
-import { onValue, ref } from "firebase/database";
-import React, { useState , useEffect } from "react";
-import {database} from './firebase'
+
+import React, { useState  } from "react";
 import App from "./App";
 
 export const multiStepContext = React.createContext();
@@ -8,23 +7,6 @@ const StepContext = () => {
   const [currentStep, setStep] = useState(1);
   const [userData, setUserData] = useState([]);
   const [finalData, setFinalData] = useState([]);
-  // function submitData() {
-  //     setUserData('')
-  //     setStep(4);
-  // }
-
-  // useEffect(() => {
-  //   onValue(ref(database),(snapshot) => {
-  //     const data= snapshot.val();
-  //     if(data!==null){
-  //       Object.values(data).map((userData)=> {
-  //         setFinalData((oldArray) => [...oldArray,userData])
-  //       });
-  //     }
-  //   });
-  // }, []);
-
-
   const confirmData = async (e) => {
     e.preventDefault();
     
