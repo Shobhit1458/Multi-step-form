@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
 import { multiStepContext } from "../StepContext";
 import { Stepper, Step } from "react-form-stepper";
-import Slider from "react-rangeslider";
-import "react-rangeslider/lib/index.css";
+
 
 const StepTwo = () => {
   const { setStep, userData, setUserData, currentStep } =
@@ -46,32 +45,30 @@ const StepTwo = () => {
                 >
                   Expected Rent *
                 </label>
-                {/* <input
-                  class="w-full px-3 py-2 text-sm leading-tight text-black bg-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                <input
+                  class="w-full px-3 py-2 text-sm leading-tight text-black bg-white border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
                   id="expectedRent"
-                  type="range"
-                  min="1"
-                  max="100"
-                  // placeholder="Enter Expected rent..."
-                  // value={userData["expectedRent"]}
-                  // onChange={(e) =>
-                  //   setUserData({ ...userData, expectedRent: e.target.value })
-                  // }
-                /> */}
+                  type="number"
+                   placeholder="Enter Expected rent..."
+                   value={userData["expectedRent"]}
+                   onChange={(e) =>
+                     setUserData({ ...userData, expectedRent: e.target.value })
+                   }
+                />
                 {/* <input
                   id="large-range"
                   type="range"
                   // value="50"
                   class="w-full h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer range-lg dark:bg-gray-200"
                 ></input> */}
-                <Slider
+                {/* <Slider
                   min={0}
                   max={100}
                   value={10}
-                  // onChangeStart={this.handleChangeStart}
-                  // onChange={this.handleChange}
-                  // onChangeComplete={this.handleChangeComplete}
-                />
+                  onChangeStart={this.handleChangeStart}
+                  onChange={this.handleChange}
+                  onChangeComplete={this.handleChangeComplete}
+                /> */}
               </div>
               <div class="mb-4">
                 <label
