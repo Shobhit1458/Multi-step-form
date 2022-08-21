@@ -26,16 +26,13 @@ const StepTwo = () => {
                 <Step onClick={() => setStep(3)}></Step>
                 <Step onClick={() => setStep(4)}>4</Step>
               </Stepper>
-              {/* <h3 class="pt-4 mb-2 text-2xl">Forgot Your Password?</h3> */}
+
               <div className="block w-full bg-red-500 rounded-3xl text-lg font-semibold text-white ">
                 <div className="relative px-8 py-8">
                   Share your house details
                 </div>
               </div>
-              {/* <p class="mb-4 text-sm text-gray-700">
-                We get it, stuff happens. Just enter your email address below
-                and we'll send you a link to reset your password!
-              </p> */}
+
             </div>
             <form class="px-8 pt-6 pb-8 mb-4 bg-white rounded">
               <div class="mb-4">
