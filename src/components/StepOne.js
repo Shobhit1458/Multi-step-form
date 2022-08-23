@@ -38,7 +38,7 @@ const StepOne = () => {
           window.confirmationResult = confirmationResult;
         })
         .catch((error) => {
-          alert("ni hora kuch");
+          alert("FireBase dont Work when deployed through netlify");
         });
     }
     else 
